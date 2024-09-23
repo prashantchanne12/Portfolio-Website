@@ -38,7 +38,10 @@ import profileImage from "../assets/images/profile.jpeg";
 </div>
 
 <script>
-  document.getElementById('showResumeBtn').addEventListener('click', () => {
-    window.open('/resume.pdf', '_blank');
-  });
+  const showResumeBtn = document.getElementById('showResumeBtn');
+  if (showResumeBtn){
+    showResumeBtn.addEventListener('click', () => {
+      window.open('/resume.pdf', '_blank');
+    });
+  }
 </script>
