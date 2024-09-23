@@ -9,5 +9,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: "https://prashantchanne12.github.io",
-  base: "/",
+  base: "/portfolio",
 });
