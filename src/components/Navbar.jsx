@@ -10,22 +10,30 @@ const Navbar = () => {
       </span>
       <div className="flex ml-16 items-center space-x-5">
         <div>
-          <img
-            src={LinkedInImage.src}
-            className="w-full h-20"
-            alt="Linkedin Logo"
-          />
+          <a href="https://www.linkedin.com/in/prashant-channe/">
+            <img
+              src={LinkedInImage.src}
+              className="w-full h-20"
+              alt="Linkedin Logo"
+            />
+          </a>
         </div>
         <div>
-          <img
-            src={GitHubImage.src}
-            className="w-full h-11"
-            alt="Linkedin Logo"
-          />
+          <a href="https://github.com/prashantchanne12">
+            <img
+              src={GitHubImage.src}
+              className="w-full h-11"
+              alt="Linkedin Logo"
+            />
+          </a>
         </div>
-        <div className="flex items-center">
-          <MdAlternateEmail size={22} />
-          <span className="font-medium text-gray-800"> prchanne@iu.edu</span>
+        <div>
+          <a href="mailto: prchanne@iu.edu">
+            <div className="flex items-center">
+              <MdAlternateEmail size={22} />
+              <span className="font-medium text-gray-800">prchanne@iu.edu</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>

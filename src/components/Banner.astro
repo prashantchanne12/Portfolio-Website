@@ -24,9 +24,21 @@ import profileImage from "../assets/images/profile.jpeg";
         </div>
         <p class="text-lg py-2  text-gray-600">Developing apps and websites to solve real-world problems.</p>
         <div class="flex space-x-4 py-2">
-          <button class="bg-gray-950 font-medium text-white py-3 px-5 rounded-sm inline-block self-start  border-gray-900 ">See my Resume</button>
-          <button class="bg-white font-medium text-black py-3 px-5 rounded-sm inline-block self-start border border-gray-900 ">See my Projects</button>
+          <button id="showResumeBtn" class="bg-gray-950 font-medium text-white py-3 px-5 rounded-sm inline-block self-start  border-gray-900 ">See my Resume</button>
+          <a href="https://github.com/prashantchanne12">
+            <button class="bg-white font-medium text-black py-3 px-5 rounded-sm inline-block self-start border border-gray-900 ">See my Projects</button>
+          </a>
         </div>
       </div>
     </div>
+
+    <div class="bg-[#F5F5F0]">
+
+    </div>
 </div>
+
+<script>
+  document.getElementById('showResumeBtn').addEventListener('click', () => {
+    window.open('/resume.pdf', '_blank');
+  });
+</script>
